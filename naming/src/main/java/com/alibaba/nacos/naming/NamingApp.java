@@ -28,7 +28,7 @@ import org.springframework.scheduling.annotation.EnableScheduling;
  * @author xxc
  */
 @EnableScheduling
-@SpringBootApplication(scanBasePackages = {"com.alibaba.nacos.naming", "com.alibaba.nacos.core", "com.bytes.bfs.nacos.plus"})
+@SpringBootApplication(scanBasePackages = {"com.bytes", "com.alibaba.nacos.naming", "com.alibaba.nacos.core"})
 @Import(ServerMemberManagerPlus.class)
 public class NamingApp {
 
