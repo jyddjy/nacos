@@ -16,8 +16,10 @@
 
 package com.alibaba.nacos.naming;
 
+import com.bytes.bfs.nacos.plus.ServerMemberManagerPlus;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.annotation.Import;
 import org.springframework.scheduling.annotation.EnableScheduling;
 
 /**
@@ -27,6 +29,7 @@ import org.springframework.scheduling.annotation.EnableScheduling;
  */
 @EnableScheduling
 @SpringBootApplication(scanBasePackages = {"com.alibaba.nacos.naming", "com.alibaba.nacos.core", "com.bytes.bfs.nacos.plus"})
+@Import(ServerMemberManagerPlus.class)
 public class NamingApp {
 
     public static void main(String[] args) {
